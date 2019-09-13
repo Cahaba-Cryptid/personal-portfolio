@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -40,7 +44,7 @@
             <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
                 <h1>Highly motivated and driven software developer with experience in coding, web design, and
                     management.</h1>
-                <button class="btn_one">Hire Me</button><br>
+                <!-- <button class="btn_one">Hire Me</button><br> -->
                 <table>
                     <tr>
                         <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
@@ -64,12 +68,10 @@
     <div id="work">
         <h1>work</h1>
         <div id="photos">
-            <img onclick="magnify($(this).attr('src'))"
-                src="public/images/Where-Next-Travel.png">
-            <img onclick="magnify($(this).attr('src'))"
-                src="public/images/DM-Scheduler.png">
-                <!-- Old placeholder photos -->
-             <!-- <img onclick="magnify($(this).attr('src'))"
+            <img onclick="magnify($(this).attr('src'))" src="public/images/Where-Next-Travel.png">
+            <img onclick="magnify($(this).attr('src'))" src="public/images/DM-Scheduler.png">
+            <!-- Old placeholder photos -->
+            <!-- <img onclick="magnify($(this).attr('src'))"
                 src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80">
             <img onclick="magnify($(this).attr('src'))"
                 src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
@@ -80,74 +82,87 @@
             <img onclick="magnify($(this).attr('src'))"
                 src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
         </div> -->
-    </div>
-    <div id="bio">
-        <h1>about</h1>
-        <p>
-            Hi! I'm Hayden.<br>
-            I'm a full-stack web developer with a background in management and teambuilding. 
-        </p>
-        <p>
-                Until early in 2019 I managed a café in Homewood, Alabama, but I wanted to pursue my hobbyist’s interest in development. I graduated from Covalence’s coding boot camp later that May and began working as a freelance web developer. Currently I am working with one travel company developing their main website. I take on other contract jobs as they come, but I would love for an opportunity to grow further with a dedicated developer team. 
-        </p>
-        <p>
-                My passion is for front end development, but I am more than capable working with full stack applications. I work well with teams, and frequently find new friends at work. New technologies are exiting to me as I am always up to learn something new. My favorite part of development is getting to know a piece of technology and getting to share that knowledge with others. Finding answers is never an issue for me since I find myself surrounded by the appropriate resources every day (mainly new friends, collogues, and of course Google).
-        </p>
-        <p>
-                The main technologies I use right now are JavaScript, React, Node.JS, TypeScript, jQuery, MySQL, Express, HTML, CSS, SCSS, Git, and Bootstrap. I have started to move away from Bootstrap in favor of CSS grid and SCSS, although I am comfortable using all 3. It is my goal to keep learning new technologies as I continue my growth as a developer.
-        </p>
-        <p>
-                If you find yourself in need of a new developer please fill out the contact form at the bottom of the page. I am always willing to learn new skills if what you use are not listed above! 
-        </p>
-    </div>
-    <div id="contact">
-        <h1>contact</h1>
-        <table>
-            <tr>
-                <td>
-                    <div id="inner_div">
-                        <table id="inner_table">
-                            <tr>
-                                <td><i class="fas fa-phone"></i> &nbsp; +1 205 441 8422</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-at"></i> &nbsp; chfrank9011@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        East Lake<br>
-                                        Birmingham,
-                                        Alabama
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="social"><i class="fab fa-github"></i></a>
-                                    <a class="social"><i class="fab fa-twitter"></i></a>
-                                    <a class="social"><i class="fab fa-reddit-alien"></i></a>
-                                    <a class="social"><i class="fab fa-medium"></i></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-                <td>
-                    <form action="https://formspree.io/chfrank9011@gmail.com" method="POST">
-                        <input type="text" name="name" placeholder="name">
-                        <input type="email" name="_replyto" placeholder="email">
-                        <textarea name="message" placeholder="your message"></textarea>
-                        <button type="submit" value="Send" class="btn_one">send</button>
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="footer">
-        You made it to the bottom!<br>
-    </div>
-    <script src="index.js" type="text/javascript"></script>
+        </div>
+        <div id="bio">
+            <h1>about</h1>
+            <p>
+                Hi! I'm Hayden.<br>
+                I'm a full-stack web developer with a background in management and teambuilding.
+            </p>
+            <p>
+                Until early in 2019 I managed a café in Homewood, Alabama, but I wanted to pursue my hobbyist’s interest
+                in development. I graduated from Covalence’s coding boot camp later that May and began working as a
+                freelance web developer. Currently I am working with one travel company developing their main website. I
+                take on other contract jobs as they come, but I would love for an opportunity to grow further with a
+                dedicated developer team.
+            </p>
+            <p>
+                My passion is for front end development, but I am more than capable working with full stack
+                applications. I work well with teams, and frequently find new friends at work. New technologies are
+                exiting to me as I am always up to learn something new. My favorite part of development is getting to
+                know a piece of technology and getting to share that knowledge with others. Finding answers is never an
+                issue for me since I find myself surrounded by the appropriate resources every day (mainly new friends,
+                collogues, and of course Google).
+            </p>
+            <p>
+                The main technologies I use right now are JavaScript, React, Node.JS, TypeScript, jQuery, MySQL,
+                Express, HTML, CSS, SCSS, Git, and Bootstrap. I have started to move away from Bootstrap in favor of CSS
+                grid and SCSS, although I am comfortable using all 3. It is my goal to keep learning new technologies as
+                I continue my growth as a developer.
+            </p>
+            <p>
+                If you find yourself in need of a new developer please fill out the contact form at the bottom of the
+                page. I am always willing to learn new skills if what you use are not listed above!
+            </p>
+        </div>
+        <div id="contact">
+            <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1 205 441 8422</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; chfrank9011@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                        <div id="address">
+                                            East Lake<br>
+                                            Birmingham,
+                                            Alabama
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social"><i class="fab fa-github"></i></a>
+                                        <a class="social"><i class="fab fa-twitter"></i></a>
+                                        <a class="social"><i class="fab fa-reddit-alien"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form action="https://formspree.io/chfrank9011@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="name">
+                            <input type="email" name="_replyto" placeholder="email">
+                            <textarea name="message" placeholder="your message"></textarea>
+                            <button type="submit" value="Send" class="btn_one">send</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            You made it to the bottom!<br>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>
